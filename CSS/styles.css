@@ -37,5 +37,148 @@ header nav {
     padding: 1rem;
     border-bottom: 1px solid #ccc
 }
+#bottom-header h3 {
+    font-size: 1.4rem;
+    
+}
+#bottom-header a {
+    color: #333;
+}
+#bottom-header-inner {
+max-width: 1000px;
+margin: 0 auto;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
 
+#bottom-header-inner a {
+    margin: 0 0.5rem;
+}
+#bottom-header-inner .btn, .btn {
+    background: #72869b;
+    border-radius: 10rem;
+    padding: 0.5 1.2rem;
+    color: #fff;
+}
 
+/* Conteúdo */
+#ribbon {
+    text-align: center;
+    padding: 1rem;
+    background-color: #c6c6d5;
+    color: #4f4b4b;
+    font-size: 0.9rem;
+}
+#ribbon a {
+    color: #1479de
+}
+#main-content {
+    text-align: center;
+    color: #4f4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main-content #title {
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+#main-content #subtitle {
+    margin: 1rem;
+    font-size: 1.4rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#main-content #description {
+    max-width: 700px;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+#main-content #price {
+    font-size: 1.4rem;
+    color: #92929f;
+    margin: 2rem;
+}
+#main-content .btn {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.3rem;
+    align-self: center;
+}
+#main-content #product-image {
+    max-width: 1000px;
+    margin: 4rem auto;
+    opacity: 1;
+    transition: 0.5s;
+}
+#main-content #product-image.changing {
+    opacity: 0.5s;
+}
+#image-picker {
+    margin-bottom: 450px;
+}
+#image-picker ul {
+    display: flex;
+    justify-content: center;
+    align-items: ;
+}
+#image-picker li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+#image-picker li .color {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px;
+    border: 4.5px solid #fff
+    pointer-events: none;
+
+}
+#image-picker li .description {
+    font-size: 0.8rem;
+    color: #4f4b4b;
+    margin-top: 0.7rem;
+}
+#green .color {
+    background-color: #273427;
+}
+#silver .color {
+    background-color: #dbdcd7;
+}
+#golden .color {
+    background-color: #f2ddc3;
+}
+#grafite .color {
+    background-color: #42403e;
+}
+.select {
+    outline: 2px solid #449af1
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    #navbar li {
+        display: none;
+    }
+    #navbar #logo {
+        display: flex;
+}
+#bottom-header-links a {
+    display: none;
+}
+#bottom-header-links .btn {
+    display: flex;
+}
+#main-content {
+    padding: 2.5rem;
+    overflow: hidden;
+}
+#main-content #subtitle {
+    font-size: 3.5rem;
+}
+}
