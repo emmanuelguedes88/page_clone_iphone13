@@ -15,6 +15,8 @@ const image = document.querySelector("#product-image");
 
     console.log(id);
     button.querySelector(".color").classList.add("selected");
+    
+    image.classList.add("changing");
 
   });
 });
